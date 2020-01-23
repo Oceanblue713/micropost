@@ -1,0 +1,6 @@
+<% if logged_in? %>
+  <h1><%= @user.name %>'s Like Page</h1>
+  <% @favorites.each do |favorite| %>
+    <p><%= favorite.micropost.id %>: <p><%= favorite.micropost.content %></p>
+  <% end %>
+<% end %>
