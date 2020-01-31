@@ -3,4 +3,5 @@
   <% @favorites.each do |favorite| %>
     <p><%= favorite.micropost.id %>: <p><%= favorite.micropost.content %></p>
   <% end %>
+  <%= link_to "Back to #{@user.name} page", user_path(@user) %>
 <% end %>
